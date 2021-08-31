@@ -1,0 +1,145 @@
+.header {
+  height: 60px;
+  padding: 20px 50px;
+}
+.header h3 {
+  letter-spacing: 1px;
+  font-weight: 300;
+  cursor: pointer;
+}
+.container {
+  padding: 0 50px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 300px;
+  width: 600px;
+}
+
+.btns {
+  margin-top: 25px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.btns button {
+  margin-right: 10px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+.container textarea {
+  color: #111;
+  outline: none;
+  resize: none;
+  border: 2px solid #111;
+}
+.summery {
+  display: flex;
+  flex-direction: column;
+  height: 100px;
+  width: 600px;
+  padding: 0 50px;
+  box-sizing: border-box;
+}
+button {
+  outline: none;
+}
+.btn button:hover {
+  background: rgba(0, 0, 0, 0.2);
+}
+@media only screen and (min-width: 420px) and (max-width: 611px) {
+  .main {
+    height: 300px;
+    width: 400px;
+  }
+
+  .summery {
+    width: 400px;
+    height: 200px;
+  }
+  .container textarea {
+    width: 300px;
+    height: 200px;
+  }
+}
+@media only screen and (min-width: 300px) and (max-width: 420px) {
+  .container {
+    padding: 0px;
+  }
+  .main {
+    height: 330px;
+    width: 300px;
+  }
+  .main h2 {
+    font-size: 20px;
+    font-weight: 100;
+  }
+  .summery {
+    width: 300px;
+    height: 200px;
+    padding: 0px;
+  }
+  .summery h2 {
+    font-weight: 100;
+    font-size: 20px;
+    margin-top: 10px;
+  }
+  .container textarea {
+    width: 300px;
+    height: 200px;
+  }
+  .btns {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .btns button {
+    font-size: 12px;
+    padding: 2px;
+    margin: 5px;
+  }
+}
+@media only screen and (min-width: 200px) and (max-width: 300px) {
+  .container {
+    padding: 0px;
+  }
+  .main {
+    height: 330px;
+    width: 200px;
+  }
+  .main h2 {
+    font-size: 14px;
+    font-weight: 100;
+  }
+  .summery {
+    width: 200px;
+    height: 200px;
+    padding: 0px;
+  }
+  .summery h2 {
+    font-weight: 100;
+    font-size: 20px;
+    margin-top: 10px;
+  }
+  .container textarea {
+    width: 200px;
+    height: 200px;
+  }
+  .btns {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .btns button {
+    font-size: 12px;
+  }
+  .summery p {
+    margin: 0;
+  }
+}
