@@ -63,10 +63,10 @@ const Home = () => {
           ></textarea>
           <div className={styled.btns} style={changeBtnMode}>
             <button onClick={toUppercaseFun} style={changeBtnMode}>
-              Conver to UpperCase
+              Convert to UpperCase
             </button>
             <button onClick={toLowerCaceFun} style={changeBtnMode}>
-              Conver to LowerCase
+              Convert to LowerCase
             </button>
             <button onClick={allCelear} style={changeBtnMode}>
               Clear All
